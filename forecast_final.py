@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 # Function to load preprocessed data
 @st.cache_data
 def load_data():
-    return pd.read_pickle("forecast_final.csv")  
+    return pd.read_csv("forecast_final.csv")  
 # Load data
 df_merged = load_data()
 
